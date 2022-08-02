@@ -1,0 +1,217 @@
+@font-face{ 
+    font-family:apple; 
+ src:url('./AppleSDGothicNeoR.woff');
+
+}
+
+@font-face {
+  font-family: "Apple Gothic";
+  src: url("../studyfile/Fonts/AppleSDGothicNeoR.woff");
+}
+
+
+
+
+html,body {
+  height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.nav1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav1 {
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  background-color: black;
+  z-index: 2;
+    border-bottom:1px solid grey;
+    transition:all 1s;
+}
+
+
+.nav1-container {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav1-logo {
+  flex: 3;
+  font-size: 20px;
+}
+
+.nav1-nav {
+  flex: 2;
+  max-width: 100%;
+  font-size: 15px;
+}
+
+.nav1-nav-navitem {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+
+
+.con1{
+    width:200vw;
+    overflow-x:hidden;
+    color:white;
+}
+
+
+
+.con1-left,.con1-right{
+    width:100vw;
+    float:left;
+}
+.con1-left{
+    background-color:black;
+    transition:margin-left 1s;
+    
+}
+
+
+.con1-right{
+    background-color:white;
+}
+
+
+
+.con1-left-toright{
+    position:fixed;
+    right:5vw;
+    top:50vh;
+    
+    color:white;
+    font-size:30px;
+}
+
+.con1-right-toleft{
+    position:fixed;
+    left:5vw;
+    top:50vh;
+    
+    color:black;
+    font-size:30px;
+}
+
+/*====== con1-left========*/
+
+.con1-left-people,.con1-left-news,.con1-left-ext{
+    padding:10px;
+    height:100vh;
+    
+}
+
+.con1-left-people h1,.con1-left-news h1,.con1-left-ext h1{
+    text-align:center;
+    margin:70px 0;
+}
+
+.con1-left-people-imgbox,.con1-left-news-ulbox,.con1-left-ext-box{
+    width:800px;
+    height:300px;
+    margin:0 auto;
+    
+    display:flex;
+    justify-content:space-evenly
+}
+
+
+
+
+.con1-left-news-ulbox li{
+    font-size:40px;
+    height:33%;
+}
+
+.con1-left-ext-box-1,.con1-left-ext-box-2,.con1-left-ext-box-3{
+    padding:5px;
+    width:250px;
+    height:400px;
+    padding-top:20px;
+    border:3px white solid;
+    
+    text-align:center;
+    
+   
+}
+
+.con1-left-ext-box-1 img{
+    height:35%;
+    margin:5px;
+}
+
+.con1-left-ext-box-2 img{
+    width:100%;
+    margin-top:60px;
+}
+
+.con1-left-ext-box-3 img{
+    width:100%;
+    margin-top:30px;
+}
+
+
+/*======== 왼쪽 디자인 ====*/
+.con1-left-people-imgbox-1:hover{
+/*    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,    rgba(0, 0, 0, 0.22) 0px 10px 10px;  */
+    transform: translateY(-10px);  transition: all 0.4s;
+}
+.con1-left-people-imgbox-1:hover >.con1-left-people-imgbox-1-blur{
+    opacity:1;
+    transition:all 1s;
+}
+
+.con1-left-people-imgbox-1{
+    width:240px;
+    height:300px;
+    position:relative;
+}
+.con1-left-people-imgbox-1 img{
+    width:100%;
+    height:100%;
+}
+
+.con1-left-people-imgbox-1-blur{
+    opacity:0;
+    
+    width:100%;
+    height:100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) );
+    
+    position:absolute;
+    top:0;
+    
+}
+
+.con1-left-people-imgbox-1-blur h3{
+    text-align:center;
+    margin-top:20px
+}
+
+.con1-left-people-imgbox-1-blur p{
+    padding:10px;
+    margin-top:30px;
+}
+
+
+/*===== 오른쪽 추가 디자인 ===*/
+.radius14px{
+    border-radius:14px;
+}
+

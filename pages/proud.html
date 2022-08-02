@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="../index.css" rel="stylesheet" />
+    <link href="../css/proud.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>이것이 고대 라이프 | 고뽕 충전</title>
+  </head>
+  <body>
+    <div class="nav1">
+      <div class="nav1-container">
+        <div class="nav1-logo">
+          <a href="../hack.html">IKORA</a>
+        </div>
+
+        <div class="nav1-nav">
+          <ul class="nav nav1-nav-navitem">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./tasty.html"
+                >맛집 추천</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">고뽕 충전</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./passion.html">고대인의 열정</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="proud-container">
+      <!-- 낭만있는 캠퍼스 사진을 소개하는 섹션 -->
+      <section class="campus">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="letters">
+            <div>햇살과 낭만,</div>
+            <div>멋스러움,</div>
+            <div>역사가 살아숨쉬는.</div>
+          </div>
+
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2500">
+                <img src="../images/kor1.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <img src="../images/kor2.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <img src="../images/kor3.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 고연전 응원사진 -->
+      <section class="koyeon">
+        <div id="reddiv">
+          <h2>승리를 향한 <span id="reddy">붉은</span> 물결</h2>
+        </div>
+        <h3>(정기 <span id="reddy">고</span><span id="bluey">연</span>전)</h3>
+        <div class="photowall">
+          <div class="photo-row">
+            <div class="photo-item">
+              <img src="../images/koyeon1.png" />
+            </div>
+            <div class="photo-item">
+              <img src="../images/koyeon2.jpg" />
+            </div>
+            <div class="photo-item">
+              <img src="../images/koyeon3.jpg" />
+            </div>
+          </div>
+          <div class="photo-row">
+            <div class="photo-item">
+              <img src="../images/koyeon4.jpg" />
+            </div>
+            <div class="photo-item">
+              <img src="../images/koyeon5.jpg" />
+            </div>
+            <div class="photo-item">
+              <img src="../images/koyeon6.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const redletterdiv = document.querySelector("#reddiv");
+      redletterdiv.addEventListener("mouseover", function () {
+        const redletter = document.getElementById("reddy");
+        redletter.style.fontSize = "70px";
+        redletter.style.color = "#940000";
+      });
+    </script>
+  </body>
+</html>

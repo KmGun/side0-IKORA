@@ -1,0 +1,122 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.tasty-container {
+  width: 100%;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roulette-container {
+  box-sizing: border-box;
+  width: 85%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  padding: 15px;
+  box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+  transition: all 0.4s;
+}
+
+.roulette-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transform: translateY(-4px);
+  transition: all 0.4s;
+}
+
+input {
+  margin-top: 20px;
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  background: black;
+  transition: all 0.4s;
+}
+
+input:hover {
+  background: #940000;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all 0.4s;
+}
+
+.card-container {
+  margin-top: 80px;
+  width: 85%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  padding: 15px;
+}
+
+#hid,
+#den {
+  transition: all 0.1s;
+}
+
+#hid:hover {
+  color: rgb(249, 26, 138);
+  font-size: 80px;
+  transition: all 0.1s;
+}
+
+#den:hover {
+  color: green;
+  font-size: 80px;
+  transition: all 0.1s;
+}
+
+.card-list-wrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-img-top {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.card {
+  box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+  border-radius: 24px;
+  transition: all 0.4s;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transform: translateY(-4px);
+  transition: all 0.4s;
+}
+
+#exp {
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.card-list-wrapper .card{
+    flex-basis:20%;
+}
